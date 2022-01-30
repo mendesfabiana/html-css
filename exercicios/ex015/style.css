@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+}
+h1 {
+    color: brown;
+    background-color: floralwhite;
+}
+p {
+    font-style: italic;
+    font-size: large;
+    text-align: justify;
+}
