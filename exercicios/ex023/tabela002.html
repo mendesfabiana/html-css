@@ -21,6 +21,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot {
@@ -28,6 +29,12 @@
             font-weight: bolder;
             text-align: center;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: pink;
+        } /* para colar o cabelho ficar fixo mesmo com a rolagem */
 
         td, th {
             border: 1px solid black;
@@ -68,7 +75,7 @@
          Sempre colocar o 'scope' no th 'col' (se os dados estiverem abaixo) ou 'row' (se o dado estiver na mesma linha)
      -->
      <table>
-         <caption>População da Unidades Federativas do Brasil</caption>
+         <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <th scope="col">Unidade Federativa</th> <!-- titulo -->
             <th scope="col" style="width: 50px;" >População</th> <!-- titulo -->
@@ -192,5 +199,17 @@
             </tr>
         </tfoot>
      </table>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta id culpa porro nostrum saepe dignissimos odit rem sed. Perspiciatis consequuntur fugiat consequatur dicta ut libero, sint ipsa eum est delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi deleniti qui, harum sequi beatae ipsa repudiandae perspiciatis. Consectetur nemo voluptates tempore culpa non possimus repellendus laudantium, cumque iusto totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo minima ipsam esse consequuntur aperiam quibusdam qui blanditiis nihil amet. Iste eveniet debitis modi animi alias autem. Quia, officia aliquid!</p>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta id culpa porro nostrum saepe dignissimos odit rem sed. Perspiciatis consequuntur fugiat consequatur dicta ut libero, sint ipsa eum est delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi deleniti qui, harum sequi beatae ipsa repudiandae perspiciatis. Consectetur nemo voluptates tempore culpa non possimus repellendus laudantium, cumque iusto totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo minima ipsam esse consequuntur aperiam quibusdam qui blanditiis nihil amet. Iste eveniet debitis modi animi alias autem. Quia, officia aliquid!</p>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta id culpa porro nostrum saepe dignissimos odit rem sed. Perspiciatis consequuntur fugiat consequatur dicta ut libero, sint ipsa eum est delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi deleniti qui, harum sequi beatae ipsa repudiandae perspiciatis. Consectetur nemo voluptates tempore culpa non possimus repellendus laudantium, cumque iusto totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo minima ipsam esse consequuntur aperiam quibusdam qui blanditiis nihil amet. Iste eveniet debitis modi animi alias autem. Quia, officia aliquid!</p>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta id culpa porro nostrum saepe dignissimos odit rem sed. Perspiciatis consequuntur fugiat consequatur dicta ut libero, sint ipsa eum est delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi deleniti qui, harum sequi beatae ipsa repudiandae perspiciatis. Consectetur nemo voluptates tempore culpa non possimus repellendus laudantium, cumque iusto totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo minima ipsam esse consequuntur aperiam quibusdam qui blanditiis nihil amet. Iste eveniet debitis modi animi alias autem. Quia, officia aliquid!</p>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta id culpa porro nostrum saepe dignissimos odit rem sed. Perspiciatis consequuntur fugiat consequatur dicta ut libero, sint ipsa eum est delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi deleniti qui, harum sequi beatae ipsa repudiandae perspiciatis. Consectetur nemo voluptates tempore culpa non possimus repellendus laudantium, cumque iusto totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo minima ipsam esse consequuntur aperiam quibusdam qui blanditiis nihil amet. Iste eveniet debitis modi animi alias autem. Quia, officia aliquid!</p>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta id culpa porro nostrum saepe dignissimos odit rem sed. Perspiciatis consequuntur fugiat consequatur dicta ut libero, sint ipsa eum est delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi deleniti qui, harum sequi beatae ipsa repudiandae perspiciatis. Consectetur nemo voluptates tempore culpa non possimus repellendus laudantium, cumque iusto totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo minima ipsam esse consequuntur aperiam quibusdam qui blanditiis nihil amet. Iste eveniet debitis modi animi alias autem. Quia, officia aliquid!</p>
 </body>
 </html>
