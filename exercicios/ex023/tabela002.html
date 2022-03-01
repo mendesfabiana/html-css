@@ -29,14 +29,22 @@
             text-align: center;
         }
 
-        tr.row {
-            background-color: rgba(255, 182, 193, 0.267);
-        }
-
         td, th {
             border: 1px solid black;
             padding: 8px;
         }
+
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(234, 156, 241);
+            border: 1px solid black;
+        } /* descrição da tabela */
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(250, 195, 204, 0.363);
+        } /* efeito zebrado */
 
         td.num {
             text-align: right;
@@ -48,6 +56,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -55,10 +64,14 @@
             TFOOT
                 TR, TD, TH
      -->
+     <!-- 
+         Sempre colocar o 'scope' no th 'col' (se os dados estiverem abaixo) ou 'row' (se o dado estiver na mesma linha)
+     -->
      <table>
+         <caption>População da Unidades Federativas do Brasil</caption>
         <thead>
-            <td>Unidade Federativa</td>
-            <td>População</td>
+            <th scope="col">Unidade Federativa</th> <!-- titulo -->
+            <th scope="col" style="width: 50px;" >População</th> <!-- titulo -->
         </thead>
 
         <tbody>
@@ -66,7 +79,7 @@
                 <td>Acre</td>
                 <td class="num">795.145</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Alagoas</td>
                 <td class="num">3.327.551</td>
             </tr>
@@ -74,7 +87,7 @@
                 <td>Amapá</td>
                 <td class="num">756.500</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Amazonas</td>
                 <td class="num">3.893.763</td>
             </tr>
@@ -82,7 +95,7 @@
                 <td>Bahia</td>
                 <td class="num">15.150.143</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Ceará</td>
                 <td class="num">8.867.448</td>
             </tr>
@@ -90,7 +103,7 @@
                 <td>Distrito Federal</td>
                 <td class="num">2.867.869</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Espírito Santo</td>
                 <td class="num">3.894.899</td>
             </tr>
@@ -98,7 +111,7 @@
                 <td>Goiás</td>
                 <td class="num">6.551.322</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Maranhão</td>
                 <td class="num">6.861.924</td>
             </tr>
@@ -106,7 +119,7 @@
                 <td>Mato Grosso</td>
                 <td class="num">3.236.578</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Mato Grosso do Sul</td>
                 <td class="num">2.630.098</td>
             </tr>
@@ -114,7 +127,7 @@
                 <td>Minas Gerais</td>
                 <td class="num">20.777.672</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Pará</td>
                 <td class="num">8.101.180</td>
             </tr>
@@ -122,7 +135,7 @@
                 <td>Paraíba</td>
                 <td class="num">3.950.359</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Paraná</td>
                 <td class="num">11.112.062</td>
             </tr>
@@ -130,7 +143,7 @@
                 <td>Pernambuco</td>
                 <td class="num">9.297.861</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Piauí</td>
                 <td class="num">3.198.185</td>
             </tr>
@@ -138,7 +151,7 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">16.497.395</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Rio Grande do Norte</td>
                 <td class="num">3.419.550</td>
             </tr>
@@ -146,7 +159,7 @@
                 <td>Rio Grande do Sul</td>
                 <td class="num">11.228.091</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Rondônia</td>
                 <td class="num">1.755.015</td>
             </tr>
@@ -154,7 +167,7 @@
                 <td>Roraima</td>
                 <td class="num">500.826</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Santa Catarina</td>
                 <td class="num">6.734.568</td>
             </tr>
@@ -162,7 +175,7 @@
                 <td>São Paulo</td>
                 <td class="num">44.169.350</td>
             </tr>
-            <tr class="row">
+            <tr>
                 <td>Sergipe</td>
                 <td class="num">2.227.294</td>
             </tr>
@@ -174,8 +187,8 @@
 
         <tfoot>
             <tr>
-                <td>Total de habitantes</td>
-                <td class="num"><strong>210.147.125</strong></td>
+                <th scope="row">Total de habitantes</th> <!-- titulo -->
+                <td class="num"><strong>210.147.125</strong></td> <!-- dado -->
             </tr>
         </tfoot>
      </table>
